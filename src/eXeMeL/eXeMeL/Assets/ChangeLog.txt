@@ -1,0 +1,89 @@
+﻿*7/23/2019 - Republish to server
+
+No new features.  Change the certificate so eXeMeL can be published again.  Looks like it will need to be reinstalled to get automatic updates again.
+
+*9/13/2017 - Bug Fixes
+
+Pressing ESC from the search field will now return control back to the editor.
+
+*5/7/2017 - New Solarized Dark Themes
+
+New application-wide Solarized Dark theme based on Ethan Schoonover's work. See http://ethanschoonover.com/solarized for more information.
+
+New syntax highlighting scheme for the Solarized Dark theme. 
+
+*5/10/2016 - New XPath Utility
+
+New XPath Utility mode has been added.  Get to it by pressing the "Editor" button in the upper left, or press F2.
+
+Search for elements using the XPath textbox at the top.  All elements that match the xpath will be highlighted as you type.
+
+The xpath's starting element is highlighted, and the name is displayed to the right of the XPath textbox.
+
+Right click an element for additional options:
+
+- Select it as the new starting element for xpaths
+- Expand / Collapse elements across the entire document
+- Copy to the clipboard an xpath that starts at the root, or the starting element, to the current element
+
+*4/28/2016 - New Editor Features
+
+New option to highlight all instances of the currently selected text in the editor.
+
+New hotkeys to fold/unfold specific levels of the XML.  Pressing ALT+1 now folds the first level of XML elements.  SHIFT+ALT+1 will unfold that same level.  ALT+2 folds the second level, and so on.
+
+Thanks to Wei Yang for adding these features.
+
+*4/5/2016 - Find and Editing Updates
+
+When searching for text, information will display in the lower right as to what match you're on, and how many were found.  Pressing Escape while in the Find box will now cancel your search.
+
+Added Copy, Cut, and Paste to the right-click context menu.
+
+*4/1/2016 - Updated Syntax Highlighting
+
+Improved the contrast between elements and the element content for the new Blue theme.
+
+*3/24/2016 - New Options
+
+New option to select the font that is used in the editor.
+
+New syntax highlighting scheme for the dark application theme.  This is largely based on Visual Studio's XAML scheme.
+
+*5/2/2014 - Dark Application Theme
+
+New application-wide dark theme.  Change to it in the settings.
+
+New syntax highlighting scheme to accompany the dark application theme.
+
+*4/15/2014 - Syntax Highlighting
+
+New syntax highlighting scheme and the ability to change the scheme the application uses.  Currently there are two options, the default "Earthy" option and the original "Bright" option.
+
+Automatically display the Change Log window when launching the application after an update
+
+Settings are now saved in the registry, under HK_CURRENT_USER/Software/eXeMeL to prevent them from being overwritten when updated.
+
+*4/14/2014 - Change Log
+
+Added this Change Log window
+
+*4/9/2014
+
+Bug fixes that were caused during the release of the Delve feature
+
+* 4/6/2014 - Saving
+
+Added Save feature.  If a file is opened with eXeMeL then the contents of the window will be saved to the same document.  If the content of the eXeMeL editor did not come from a file, a save dialog is displayed.
+
+Note that the save feature will save the currently active snapshot for the document you have open.
+
+Icon added next to the Editor title that displays if the editor's document was loaded from a file or not.
+
+*4/5/2014 - Delve Feature
+
+Added new Snapshot feature.  This will take a snapshot-in-time of the current document and the undo stack, and push a new version of the document, with the same text, onto the Snapshot stack.  Initially added to support the Delve feature.
+
+Added new Delve feature.  Right click on a block of encoded XML and choose the Delve option.  A new snapshot will be created with the decoded version of the XML that was clicked on.
+
+Added a button next to the Find controls to manually create a snapshot
